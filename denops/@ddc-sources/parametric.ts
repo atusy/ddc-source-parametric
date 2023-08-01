@@ -18,7 +18,7 @@ export class Source extends BaseSource<Params> {
     sourceParams: Params;
     completeStr: string;
   }): Promise<Item[]> {
-    const items = JSON.parse(JSON.stringify(args.sourceParams.items));
+    const items = args.sourceParams.items;
     return Promise.resolve(items);
   }
 
